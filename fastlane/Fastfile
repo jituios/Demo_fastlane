@@ -18,6 +18,10 @@ default_platform :ios
 platform :ios do
   before_all do
     # ENV["SLACK_URL"] = "https://hooks.slack.com/services/..."
+    ENV["FASTLANE_USER"] = “spidrontech@gmail.com”
+    ENV["FASTLANE_PASSWORD"] = “Papaji@123”
+    ENV["CERT_DEVELOPMENT"] = “true”
+    ENV["SIGH_DEVELOPMENT"] = “true”
     
     
   end
@@ -26,8 +30,9 @@ platform :ios do
   lane :test do
     scan
   end
-  lane :example do
-      puts("this is my first 🚀 lane")
+  lane :share_built do
+      cert
+      sigh
    end  
 
   desc "Submit a new Beta Build to Apple TestFlight"
