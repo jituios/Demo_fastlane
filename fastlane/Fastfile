@@ -37,9 +37,7 @@ platform :ios do
    end  
 
   lane :register_a_device do
-    register_devices(
-       devices_file: './devices.txt'
-     )
+    register_devices(devices_file: "devices.txt")
   end
 
   desc "Submit a new Beta Build to Apple TestFlight"
