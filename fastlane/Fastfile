@@ -31,9 +31,16 @@ platform :ios do
     scan
   end
   lane :share_built do
+      register_a_device
       cert
       sigh
    end  
+
+  lane :register_a_device do
+    register_devices(
+       devices_file: './devices.txt'
+     )
+  end
 
   desc "Submit a new Beta Build to Apple TestFlight"
   desc "This will also make sure the profile is up to date"
