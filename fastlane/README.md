@@ -35,9 +35,14 @@ xcode-select --install
 fastlane ios test
 ```
 Runs all the tests
-### ios example
+### ios share_built
 ```
-fastlane ios example
+fastlane ios share_built
+```
+
+### ios register_a_device
+```
+fastlane ios register_a_device
 ```
 
 ### ios beta
