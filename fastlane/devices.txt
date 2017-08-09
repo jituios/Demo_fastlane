@@ -1,1 +1,0 @@
-[linesNew insertObject:@"4cf364cacec15b55d9b73cdbfae0ea7ace40283a\tvandan" atIndex:0];
